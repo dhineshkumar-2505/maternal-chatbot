@@ -91,7 +91,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 For questions or feedback, please contact:
 - **Email**: dhineshsaff@gmail.com
-- **GitHub**: [dhineshkumar-2505](https://github.com/dhineshkuar-2505)
+- **GitHub**: [dhineshkumar-2505](https://github.com/dhineshkumar-2505)
 
 ---
 
