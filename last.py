@@ -2,7 +2,6 @@ import google.generativeai as genai
 import streamlit as st
 from deep_translator import GoogleTranslator
 from gtts import gTTS
-import pyttsx3
 import io
 import re
 import time
@@ -79,27 +78,11 @@ def clean_text(text):
     return text
 
 def text_to_speech(text, lang='en'):
-    """Convert text to speech using pyttsx3 for English and gTTS for regional languages."""
+    """Convert text to speech using gTTS."""
     clean_for_tts = clean_text(text)
     audio_bytes = io.BytesIO()
-
-    if lang == 'en':
-        # Use pyttsx3 for English
-        engine = pyttsx3.init()
-        engine.setProperty('rate', 150)  # Speed of speech
-        engine.setProperty('volume', 1.0)  # Volume level
-        voices = engine.getProperty('voices')
-        engine.setProperty('voice', voices[1].id)  # Use a female voice (if available)
-        engine.save_to_file(clean_for_tts, 'temp.mp3')
-        engine.runAndWait()
-
-        with open('temp.mp3', 'rb') as f:
-            audio_bytes.write(f.read())
-    else:
-        # Use gTTS for regional languages
-        tts = gTTS(text=clean_for_tts, lang=lang, slow=False)
-        tts.write_to_fp(audio_bytes)
-
+    tts = gTTS(text=clean_for_tts, lang=lang, slow=False)
+    tts.write_to_fp(audio_bytes)
     audio_bytes.seek(0)
     return audio_bytes
 
