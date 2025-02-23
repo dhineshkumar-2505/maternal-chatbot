@@ -1,0 +1,6 @@
+streamlit
+google-generativeai
+deep-translator
+gtts
+pyttsx3
+Pillow
