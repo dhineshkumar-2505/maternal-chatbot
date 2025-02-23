@@ -1,0 +1,36 @@
+# Ignore Streamlit secrets file
+.streamlit/secrets.toml
+
+# Ignore environment variables file
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment files
+venv/
+.env/
+env/
+ENV/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Local development files
+temp/
+tmp/
