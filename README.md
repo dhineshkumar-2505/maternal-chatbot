@@ -90,8 +90,8 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ## **Contact**
 
 For questions or feedback, please contact:
-- **Email**: your-email@example.com
-- **GitHub**: [your-username](https://github.com/your-username)
+- **Email**: dhineshsaff@gmail.com
+- **GitHub**: [dhineshkumar-2505](https://github.com/dhineshkuar-2505)
 
 ---
 
